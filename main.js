@@ -14,7 +14,7 @@
 
     const targetUrl = "https://api.sparx-learning.com/sparx.swworker.v1.Sparxweb/SendIndependentLearningTablesAnswers";
     const N = 1000; // How many times should each times table be sent?
-    const delay = 10; // How fast, in milliseconds, should each request be sent?
+    const delay = 10; // How much, in milliseconds, should the program wait with each request?
 
     // Intercepts fetch requests
     const originalFetch = window.fetch;
