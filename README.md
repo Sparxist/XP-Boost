@@ -19,7 +19,7 @@ I advise you to reload the website 1 times tables question before the end (hotke
 > What this code does is exploit Sparx's lack of an [idempotency token](https://www.youtube.com/watch?v=IP-rGJKSZ3s). As a result, given the fact that each Times Tables problem only increases XP by 1, the program needs to send A LOT of requests for XP gain, spamming your network and Sparx's servers. As a result, you may get in trouble with Sparx 😀
 >
 > All code is therefore made for educational purposes only. Using this is at your own risk. See the MIT License for more info on liability.
-> If your/Sparx's network can't stand the constant requests, try raising the delay / lowering the requests.
+> If you or Sparx's network can't stand the constant requests, try raising the delay / lowering the requests.
 
 > [!NOTE]
 > You may see that your XP gain in the leaderboard section is significantly higher than your real XP gain. This is a known issue that probably can't be solved, as it requires the servers to work perfectly.
