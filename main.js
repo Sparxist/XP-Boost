@@ -25,10 +25,10 @@
             (typeof input === 'string' ? input.includes(targetUrl) : input.url.includes(targetUrl))) {
             console.log(`[XP-Boost] Intercepted fetch request to ${targetUrl}, sending ${N} additional requests...`);
             
+            console.log(`[XP-Boost] Starting to send ${N} requests via fetch...`);
             for (let i = 0; i < N; i++) {
                 await new Promise(r => setTimeout(r, delay));
                 try {
-                    console.log(`[XP-Boost] Starting to send ${N} requests via fetch...`);
                     originalFetch(input, init);
                 } catch (e) {
                     console.error('[XP-Boost] Error in fetch interceptor:', e);
@@ -52,10 +52,10 @@
         if (this._method?.toUpperCase() === "POST" && this._url?.includes(targetUrl)) {
             console.log(`[XP-Boost] Intercepted XHR request to ${targetUrl}, sending ${N} additional requests...`);
             
+            console.log(`[XP-Boost] Starting to send ${N} requests via XHR...`);
             for (let i = 0; i < N; i++) {
                 setTimeout(() => {
                     try {
-                        console.log(`[XP-Boost] Starting to send ${N} requests via XHR...`);
                         const xhr = new XMLHttpRequest();
                         xhr.open(this._method, this._url, true);
                         
