@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Sparx have now made it so that times tables NO LONGER gives you XP! This puts this project unfortunately on hold for now, and this program will not work for now.
+
 # XP-Boost
 Want to gain massive amounts of XP in Sparx Maths? Now you can!
 
